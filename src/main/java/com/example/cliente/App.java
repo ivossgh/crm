@@ -91,6 +91,7 @@ public class App
     }
 
     private static void listarClientes(){
+        System.out.println(" - Lista de Clientes - ");
 
     }
 
