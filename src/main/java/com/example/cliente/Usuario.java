@@ -6,13 +6,13 @@ import com.example.cliente.Usuario;
 public class Usuario {
     private String nome;
     private String telefone;
-    private LocalDate data;
     private double valor;
     private String local;
     private String email;
+    private LocalDate data;
     
 
-    public Usuario(String nome, String telefone, LocalDate data, double valor, String local, String email){
+    public Usuario(String nome, String telefone, double valor, String local, String email, LocalDate data){
         this.nome = nome;
         this.telefone = telefone;
         this.data = data;
@@ -37,14 +37,6 @@ public class Usuario {
         this.telefone = telefone;
     }
 
-    public LocalDate getData(){
-        return data;
-    }
-
-    public void setData(LocalDate data){
-        this.data = data;
-    }
-
     public double getValor(){
         return valor;
     }
@@ -67,6 +59,14 @@ public class Usuario {
 
     public void setEmail(String email){
         this.email = email;
+    }
+
+    public LocalDate getData(){
+        return data;
+    }
+
+    public void setData(LocalDate data){
+        this.data = data;
     }
 
 }
